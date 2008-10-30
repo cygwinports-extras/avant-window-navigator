@@ -1,0 +1,6 @@
+category: X11
+requires: cygwin GConf2 gdk-pixbuf2 glib2 gnome-vfs2 gtk2-x11 libcairo2 libdbus-glib_1_2 libgnome-desktop2 libintl8 libwnck1_22 libX11_6 python python-cairo python-gobject2 python-gtk2
+sdesc: "Dock-like navigation bar for Compositing desktops"
+ldesc: "Avant Window Navigator (Awn) is a dock-like bar which sits at 
+the bottom of the screen. It has support for launchers, task lists, and 
+third party applets."

@@ -1,0 +1,22 @@
+--- origsrc/avant-window-navigator-0.2.6/bindings/python/Makefile.am	2008-02-22 10:10:17.000000000 -0600
++++ src/avant-window-navigator-0.2.6/bindings/python/Makefile.am	2008-10-28 20:31:17.542746100 -0500
+@@ -18,7 +18,7 @@
+ pyawnexecdir = $(PYTHON_SITE_PKG)/awn
+ pyawnexec_LTLIBRARIES = awn.la
+ 
+-common_ldflags = -module -avoid-version
++common_ldflags = -module -avoid-version -no-undefined
+ 
+ AWN_DEFS = awn.defs
+ CLEANFILES = awn.c
+--- origsrc/avant-window-navigator-0.2.6/libawn/Makefile.am	2008-02-22 10:10:17.000000000 -0600
++++ src/avant-window-navigator-0.2.6/libawn/Makefile.am	2008-10-28 20:29:36.745871100 -0500
+@@ -69,7 +69,7 @@
+ 	awn-enum-types.c.in	\
+ 	$(NULL)
+ libawn_la_LIBADD = $(DEPS_LIBS) $(AWN_LIBS)
+-libawn_la_LDFLAGS = -version-info 0:1:0
++libawn_la_LDFLAGS = -version-info 0:1:0 -no-undefined
+ 
+ if USE_EGG
+ libawn_la_LIBADD +=					\

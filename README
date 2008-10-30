@@ -1,0 +1,228 @@
+avant-window-navigator
+------------------------------------------
+Avant Window Navigator (Awn) is a dock-like bar which sits at the 
+bottom of the screen. It has support for launchers, task lists, and 
+third party applets.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  GConf2-2.22.0-1
+  gdk-pixbuf2-2.12.12-1
+  glib2-2.16.6-1
+  gnome-vfs2-2.22.0-1
+  gtk2-x11-2.12.12-1
+  libcairo2-1.6.4-2
+  libdbus-glib_1_2-0.76-1
+  libgnome-desktop2-2.22.3-1
+  libintl8-0.17-1
+  libwnck1_22-2.22.3-1
+  libX11_6-1.1.5-1
+  python-2.5.2-3
+  python-cairo-1.4.12-1
+  python-gobject2-2.14.2-1
+  python-gtk2-2.12.1-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
+  binutils-20080624-2
+  bison-2.3-1
+  cygport-0.4.0-1
+  flex-2.5.35-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+  vala-0.3.5-1
+
+Canonical website:
+  https://launchpad.net/awn/
+  http://wiki.awn-project.org/
+
+Canonical download:
+  https://launchpad.net/awn/+download
+
+-------------------------------------------
+
+Build instructions:
+  unpack avant-window-navigator-0.2.6-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./avant-window-navigator-0.2.6-X.cygport all
+
+This will create:
+  /usr/src/avant-window-navigator-0.2.6-X-src.tar.bz2
+  /usr/src/avant-window-navigator-0.2.6-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/awn.schemas
+  /etc/postinstall/avant-window-navigator.sh
+  /etc/preremove/avant-window-navigator.sh
+  /usr/bin/avant-window-navigator.exe
+  /usr/bin/awn-applet-activation.exe
+  /usr/bin/awn-launcher-editor
+  /usr/bin/awn-manager
+  /usr/bin/awn-schema-to-gconf
+  /usr/bin/cygawn-0.dll
+  /usr/include/libawn/awn-applet-dialog.h
+  /usr/include/libawn/awn-applet-simple.h
+  /usr/include/libawn/awn-applet.h
+  /usr/include/libawn/awn-cairo-utils.h
+  /usr/include/libawn/awn-config-client.h
+  /usr/include/libawn/awn-defines.h
+  /usr/include/libawn/awn-desktop-item.h
+  /usr/include/libawn/awn-effects.h
+  /usr/include/libawn/awn-enum-types.h
+  /usr/include/libawn/awn-enum-types.h.in
+  /usr/include/libawn/awn-plug.h
+  /usr/include/libawn/awn-settings.h
+  /usr/include/libawn/awn-title.h
+  /usr/include/libawn/awn-vfs.h
+  /usr/lib/awn/applets/taskman.desktop
+  /usr/lib/libawn.dll.a
+  /usr/lib/libawn.la
+  /usr/lib/pkgconfig/awn.pc
+  /usr/lib/python2.5/site-packages/awn/__init__.py
+  /usr/lib/python2.5/site-packages/awn/__init__.pyc
+  /usr/lib/python2.5/site-packages/awn/__init__.pyo
+  /usr/lib/python2.5/site-packages/awn/awn.dll
+  /usr/lib/python2.5/site-packages/awn/awn.la
+  /usr/share/applications/avant-window-navigator.desktop
+  /usr/share/applications/awn-manager.desktop
+  /usr/share/avant-window-navigator/active/glow.png
+  /usr/share/avant-window-navigator/active/glow2.png
+  /usr/share/avant-window-navigator/active/glow3.png
+  /usr/share/avant-window-navigator/active/glow4.png
+  /usr/share/avant-window-navigator/active/glow5.png
+  /usr/share/avant-window-navigator/active/glow6.png
+  /usr/share/avant-window-navigator/active/glow7.png
+  /usr/share/avant-window-navigator/active/glow8.png
+  /usr/share/avant-window-navigator/active/glow9.png
+  /usr/share/avant-window-navigator/active/spotlight1.png
+  /usr/share/avant-window-navigator/active/spotlight2.png
+  /usr/share/avant-window-navigator/avant-window-navigator-24.png
+  /usr/share/avant-window-navigator/avant-window-navigator-32.png
+  /usr/share/avant-window-navigator/avant-window-navigator-48.png
+  /usr/share/avant-window-navigator/avant-window-navigator.svg
+  /usr/share/avant-window-navigator/awn-manager/awnApplet.py
+  /usr/share/avant-window-navigator/awn-manager/awnDefs.py
+  /usr/share/avant-window-navigator/awn-manager/awnLauncher.py
+  /usr/share/avant-window-navigator/awn-manager/awnLauncherEditor.py
+  /usr/share/avant-window-navigator/awn-manager/awnPreferences.py
+  /usr/share/avant-window-navigator/awn-manager/awnTheme.py
+  /usr/share/avant-window-navigator/awn-manager/launcher-editor.glade
+  /usr/share/avant-window-navigator/awn-manager/window.glade
+  /usr/share/avant-window-navigator/defs/awn.defs
+  /usr/share/doc/avant-window-navigator-0.2.6/AUTHORS
+  /usr/share/doc/avant-window-navigator-0.2.6/COPYING
+  /usr/share/doc/avant-window-navigator-0.2.6/COPYING.LIB
+  /usr/share/doc/avant-window-navigator-0.2.6/ChangeLog
+  /usr/share/doc/avant-window-navigator-0.2.6/INSTALL
+  /usr/share/doc/avant-window-navigator-0.2.6/NEWS
+  /usr/share/doc/avant-window-navigator-0.2.6/README
+  /usr/share/doc/avant-window-navigator-0.2.6/TODO
+  /usr/share/gtk-doc/html/libawn/AwnApplet.html
+  /usr/share/gtk-doc/html/libawn/AwnAppletDialog.html
+  /usr/share/gtk-doc/html/libawn/AwnAppletSimple.html
+  /usr/share/gtk-doc/html/libawn/AwnPlug.html
+  /usr/share/gtk-doc/html/libawn/AwnTitle.html
+  /usr/share/gtk-doc/html/libawn/ch01.html
+  /usr/share/gtk-doc/html/libawn/home.png
+  /usr/share/gtk-doc/html/libawn/index.html
+  /usr/share/gtk-doc/html/libawn/index.sgml
+  /usr/share/gtk-doc/html/libawn/left.png
+  /usr/share/gtk-doc/html/libawn/libawn-awn-cairo-utils.html
+  /usr/share/gtk-doc/html/libawn/libawn-awn-config-client.html
+  /usr/share/gtk-doc/html/libawn/libawn-awn-defines.html
+  /usr/share/gtk-doc/html/libawn/libawn-awn-desktop-item.html
+  /usr/share/gtk-doc/html/libawn/libawn-awn-effects.html
+  /usr/share/gtk-doc/html/libawn/libawn-awn-settings.html
+  /usr/share/gtk-doc/html/libawn/libawn-awn-vfs.html
+  /usr/share/gtk-doc/html/libawn/libawn.devhelp
+  /usr/share/gtk-doc/html/libawn/libawn.devhelp2
+  /usr/share/gtk-doc/html/libawn/right.png
+  /usr/share/gtk-doc/html/libawn/style.css
+  /usr/share/gtk-doc/html/libawn/up.png
+  /usr/share/icons/hicolor/48x48/apps/awn-manager.png
+  /usr/share/icons/hicolor/scalable/apps/awn-manager.svg
+  /usr/share/locale/af/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ar/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/bg/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/bn/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ca/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/cs/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/da/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/de/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/de_DE/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/el/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/en_AU/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/es/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/et/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/eu/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/fa/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/fi/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/fi_FI/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/fr/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/fr_FR/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ga/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/gl/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/gu/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/he/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/hi/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/hr/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/hu/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/id/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/it/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/it_IT/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ja/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ka/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ko/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/lt/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/mr/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ms/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/nb/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/nl/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/nn/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/no_NO/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/pl/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/pt/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ro/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ru/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ru_RU/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/sk/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/sl/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/sq/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/sr/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/sv/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/ta/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/te/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/th/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/tr/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/uk/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/vi/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/avant-window-navigator.mo
+  /usr/share/vala/vapi/awn.deps
+  /usr/share/vala/vapi/awn.vapi
+
+------------------
+
+Port Notes:
+
+----- version 0.2.6-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

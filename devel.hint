@@ -1,0 +1,7 @@
+category: X11
+requires: cygwin avant-window-navigator libcairo-devel libdbus-glib_1-devel libgconf2-devel libgdk_pixbuf2.0-devel libglib2.0-devel libgnome-desktop2-devel libgnomevfs2-devel libgtk2.0-devel vala vala-atk vala-cairo vala-pango vala-gdk-pixbuf2.0 vala-gtk2.0
+external-source: avant-window-navigator
+sdesc: "Dock-like navigation bar for Compositing desktops (plugin devel)"
+ldesc: "Avant Window Navigator (Awn) is a dock-like bar which sits at 
+the bottom of the screen. It has support for launchers, task lists, and 
+third party applets."

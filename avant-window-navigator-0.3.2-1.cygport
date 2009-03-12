@@ -1,0 +1,16 @@
+inherit pygtk gnome2
+
+DESCRIPTION="Compositing dock bar"
+HOMEPAGE="https://launchpad.net/awn/"
+SRC_URI="http://launchpad.net/awn/0.2/${PV}/+download/${P}.tar.gz"
+PATCH_URI="0.2.6-no-undefined.patch
+           0.3.2-vpath.patch"
+
+PKG_NAMES="${PN} ${PN}-devel"
+PKG_HINTS="setup devel"
+declare ${PN//-/_}_CONTENTS="--exclude=gtk-doc --exclude=vala
+                             etc/ usr/bin/ ${PYTHON_SITELIB#/} usr/share/"
+declare ${PN//-/_}_devel_CONTENTS="usr/include/ usr/lib/libawn.* usr/lib/pkgconfig/
+                                   usr/share/gtk-doc/ usr/share/vala/"
+
+DIFF_EXCLUDES="awn*.py awn.schema-ini"

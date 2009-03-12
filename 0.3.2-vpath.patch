@@ -1,0 +1,20 @@
+--- origsrc/avant-window-navigator-0.3.2/awn-applet-activation/Makefile.am	2009-02-08 17:08:28.000000000 -0600
++++ src/avant-window-navigator-0.3.2/awn-applet-activation/Makefile.am	2009-03-10 22:34:57.524825800 -0500
+@@ -1,6 +1,7 @@
+ NULL =
+ INCLUDES =		\
+ 	$(AWN_CFLAGS)	\
++	-I$(top_srcdir)		\
+ 	$(NULL)
+ 
+ bin_PROGRAMS = awn-applet-activation
+--- origsrc/avant-window-navigator-0.3.2/src/Makefile.am	2009-02-08 17:08:29.000000000 -0600
++++ src/avant-window-navigator-0.3.2/src/Makefile.am	2009-03-10 22:32:55.087325800 -0500
+@@ -5,6 +5,7 @@ INCLUDES =				\
+ 	-DDATADIR=\""$(datadir)"\"	\
+ 	-DLOCALEDIR=\""$(datadir)/locale"\"	\
+ 	-I$(top_srcdir)/libawn		\
++	-I$(top_srcdir)		\
+ 	$(NULL)
+ 
+ if BUILD_EXPERIMENTAL
